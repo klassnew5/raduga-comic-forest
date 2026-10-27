@@ -1,0 +1,55 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', serif; color: #2c3e2d; background: #fdfbf7; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* Меню */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #1a331c; color: #fdfbf7; }
+.logo { font-size: 24px; font-weight: bold; color: #d4af37; letter-spacing: 2px; }
+.menu a { margin-left: 25px; color: #e8e8e8; transition: color 0.3s; font-family: 'Segoe UI', sans-serif; font-size: 15px; }
+.menu a:hover { color: #d4af37; }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding: 80px 50px; max-width: 1200px; margin: 0 auto; align-items: center; background: #f4f1ea; }
+.hero-text h1 { font-size: 52px; color: #1a331c; margin-bottom: 20px; line-height: 1.1; }
+.hero-text p { font-size: 20px; color: #556b57; margin-bottom: 30px; }
+.hero-img img { width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); border: 4px solid #d4af37; }
+
+.btn { display: inline-block; padding: 18px 40px; background: #d4af37; color: #1a331c; border-radius: 8px; font-weight: bold; font-size: 18px; font-family: 'Segoe UI', sans-serif; transition: all 0.3s; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+.btn:hover { background: #f1c40f; transform: translateY(-3px); }
+
+/* Секции */
+section { padding: 80px 50px; max-width: 1200px; margin: 0 auto; }
+.section-title { font-size: 40px; text-align: center; color: #1a331c; margin-bottom: 50px; }
+
+/* Герои */
+.heroes { display: flex; justify-content: center; gap: 40px; text-align: center; }
+.hero-card h3 { font-size: 24px; color: #d4af37; margin-top: 15px; }
+.hero-card p { font-size: 16px; color: #556b57; font-family: 'Segoe UI', sans-serif; }
+.hero-card img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #1a331c; }
+
+/* Что внутри */
+.formats { background: #1a331c; color: #fdfbf7; max-width: 100%; padding: 80px 50px; text-align: center; }
+.formats .section-title { color: #d4af37; }
+.format-list { display: flex; justify-content: center; gap: 30px; margin-top: 40px; flex-wrap: wrap; }
+.format-item { background: #2c4f2f; padding: 30px; border-radius: 12px; width: 250px; border: 1px solid #4a7c4e; }
+.format-item h3 { color: #d4af37; margin-bottom: 10px; font-size: 20px; }
+.format-item p { color: #b0c4b1; font-size: 14px; font-family: 'Segoe UI', sans-serif; }
+
+/* Футер */
+footer { text-align: center; padding: 40px; background: #111f12; color: #7d8f7e; font-family: 'Segoe UI', sans-serif; font-size: 14px; }
+.social-links { margin-top: 20px; display: flex; gap: 15px; justify-content: center; }
+.social-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: #2c4f2f; color: #d4af37 !important; font-weight: bold; transition: all 0.3s; }
+.social-icon:hover { transform: translateY(-3px); background: #d4af37; color: #1a331c !important; }
+
+@media (max-width: 900px) {
+    .hero, .heroes { grid-template-columns: 1fr; flex-direction: column; align-items: center; }
+    .hero-text h1 { font-size: 36px; }
+    .menu { display: none; }
+}
+
+/* Стили для блока об авторе и мобильной версии */
+@media (max-width: 900px) {
+    #author > div {
+        grid-template-columns: 1fr !important;
+    }
+}
